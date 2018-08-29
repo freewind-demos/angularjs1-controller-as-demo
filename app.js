@@ -1,8 +1,8 @@
 const app = angular.module('app', []);
-app.controller('HelloController', function ($scope) {
-    $scope.userName = "AngularJs1";
-    $scope.showHelloWords = false;
-    $scope.sayHello = function () {
+app.controller('HelloController', function () {
+    this.userName = "AngularJs1";
+    this.showHelloWords = false;
+    this.sayHello = function () {
         this.showHelloWords = true
     }
 });

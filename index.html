@@ -3,11 +3,11 @@
 </head>
 <body ng-app="app">
 <div>
-    <div ng-controller="HelloController">
+    <div ng-controller="HelloController as vm">
         <label>Name</label>
-        <input type="text" ng-model="userName"/>
-        <button ng-click="sayHello()">Say Hi!</button>
-        <div ng-show="showHelloWords">Hi, {{userName}}!</div>
+        <input type="text" ng-model="vm.userName"/>
+        <button ng-click="vm.sayHello()">Say Hi!</button>
+        <div ng-show="vm.showHelloWords">Hi, {{vm.userName}}!</div>
     </div>
 </div>
 <script src="./node_modules/angular/angular.js"></script>
